@@ -25,10 +25,11 @@ p {
   background-color: var(--white);
   color: white;
   padding: 1rem;
+  border-radius: 10px;
 }
 
 .cards {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   display: flex;
   flex-direction: column;
   /* margin: 0 auto; */
@@ -40,38 +41,55 @@ p {
   grid-area: one;
   background-color: var(--purple);
 }
+
+.one span {
+  color: var(--yellow);
+}
 .two {
   grid-area: two;
+  color: var(--black);
 }
 .three {
   grid-area: three;
   background-color: var(--yellow);
+  color: var(--black);
 }
 .four {
   grid-area: four;
   background-color: var(--purple-light);
+  color: var(--black);
 }
 .five {
   grid-area: five;
   background-color: var(--purple);
+  color: var(--white);
 }
 .six{
   grid-area: six;
+  color: var(--black);
 }
 .seven {
   grid-area: seven;
   background-color: var(--yellow-light);
+  color: var(--black);
 }
+
+.seven span {
+  color: var(--purple-light);
+}
+
 .eight {
   grid-area: eight;
   background-color: var(--yellow);
+  color: var(--black);
 }
 
 @media (min-width: 600px) {
   .cards { 
     /* grid-template-columns: repeat(4, 1fr);  */
-    width: 100vw;
-    height: 100vh;
+    margin: 40px 80px;
+    width: 1900px;
+    height: 1000px;
     display: grid;
     grid-template-areas: 
     'seven one one four'
@@ -86,5 +104,11 @@ p {
     align-self: stretch;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+  }
+
+  .five {
+    display: flex;
+    flex-direction: row;
   }
 }
