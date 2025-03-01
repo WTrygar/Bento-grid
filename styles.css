@@ -1,3 +1,90 @@
+:root {
+  --purple-light: hsl(254, 88%, 90%);
+  --purple: hsl(256, 67%, 59%);
+  --yellow-light: hsl(31, 66%, 93%);
+  --yellow: hsl(39, 100%, 71%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 7%);
+}
+
 * {
   box-sizing: border-box;
+}
+
+html { font-size: 22px; }
+body { 
+  padding: 0; 
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+.card {
+  background-color: var(--white);
+  color: white;
+  padding: 1rem;
+}
+
+.cards {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 auto; */
+  gap: 1rem;
+  
+}
+
+.one {
+  grid-area: one;
+  background-color: var(--purple);
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+  background-color: var(--yellow);
+}
+.four {
+  grid-area: four;
+  background-color: var(--purple-light);
+}
+.five {
+  grid-area: five;
+  background-color: var(--purple);
+}
+.six{
+  grid-area: six;
+}
+.seven {
+  grid-area: seven;
+  background-color: var(--yellow-light);
+}
+.eight {
+  grid-area: eight;
+  background-color: var(--yellow);
+}
+
+@media (min-width: 600px) {
+  .cards { 
+    /* grid-template-columns: repeat(4, 1fr);  */
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'seven one one four'
+    'seven two three four'
+    'eight two three four'
+    'eight six five five';
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3fr 0.5fr 1.5fr 2fr ; 
+  }
+  .card {
+    justify-self: stretch;
+    align-self: stretch;
+    width: 100%;
+    height: 100%;
+  }
 }
