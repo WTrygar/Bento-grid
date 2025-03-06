@@ -13,8 +13,28 @@
 
 html { font-size: 22px; }
 body { 
-  padding: 0; 
-  margin: 0;
+  padding: 20px 10px; 
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100vw;
+  height: auto;
+
+  background-color: beige;
+}
+
+.dm-sans-regular {
+  font-family: "DMSans";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-sans-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 p {
@@ -40,6 +60,14 @@ p {
 .one {
   grid-area: one;
   background-color: var(--purple);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2.5em;
 }
 
 .one span {
@@ -87,9 +115,10 @@ p {
 @media (min-width: 600px) {
   .cards { 
     /* grid-template-columns: repeat(4, 1fr);  */
-    margin: 40px 80px;
-    width: 1900px;
-    height: 1000px;
+    padding: 70px 140px; 
+    margin: 0;
+    width:100vw;
+    height: 100vh;
     display: grid;
     grid-template-areas: 
     'seven one one four'
