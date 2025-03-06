@@ -48,7 +48,22 @@ p {
   border-radius: 10px;
 }
 
-.card img {
+.one img {
+  height: 100%;
+  width: 100%;
+}
+
+.two img {
+  height: 100%;
+  width: 100%;
+}
+
+.three img {
+  height: 100%;
+  width: 70%;
+}
+
+.four img {
   height: 100%;
   width: 100%;
 }
@@ -83,16 +98,40 @@ h2 {
   grid-area: two;
   color: var(--black);
 }
+
+.two h4 {
+  font-size: 2em;
+  margin: 0 auto;
+}
+
 .three {
   grid-area: three;
   background-color: var(--yellow);
   color: var(--black);
+  padding-bottom: 0;
 }
+
+.three h3 {
+  font-size: 2em;
+  margin: 10px auto;
+}
+
 .four {
   grid-area: four;
   background-color: var(--purple-light);
   color: var(--black);
 }
+
+.four h4 {
+  font-size: 2em;
+  margin: 30px auto;
+}
+
+.four p {
+  font-size: 1.5em;
+  text-align: center;
+}
+
 .five {
   grid-area: five;
   background-color: var(--purple);
