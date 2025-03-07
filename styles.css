@@ -22,7 +22,7 @@ body {
   width:100vw;
   height: auto;
 
-  background-color: beige;
+  background-color: rgb(223, 223, 214);
 }
 
 .dm-sans-regular {
@@ -48,26 +48,6 @@ p {
   border-radius: 10px;
 }
 
-.one img {
-  height: 100%;
-  width: 100%;
-}
-
-.two img {
-  height: 100%;
-  width: 100%;
-}
-
-.three img {
-  height: 100%;
-  width: 70%;
-}
-
-.four img {
-  height: 100%;
-  width: 100%;
-}
-
 .cards {
   /* max-width: 1200px; */
   display: flex;
@@ -87,6 +67,11 @@ p {
   align-items: center;
 }
 
+.one img {
+  height: 100%;
+  width: 100%;
+}
+
 h2 {
   font-size: 2.5em;
 }
@@ -97,6 +82,11 @@ h2 {
 .two {
   grid-area: two;
   color: var(--black);
+}
+
+.two img {
+  height: 100%;
+  width: 100%;
 }
 
 .two h4 {
@@ -111,6 +101,12 @@ h2 {
   padding-bottom: 0;
 }
 
+.three img {
+  height: 100%;
+  width: 70%;
+  overflow: hidden;
+}
+
 .three h3 {
   font-size: 2em;
   margin: 10px auto;
@@ -120,6 +116,11 @@ h2 {
   grid-area: four;
   background-color: var(--purple-light);
   color: var(--black);
+}
+
+.four img {
+  height: 100%;
+  width: 100%;
 }
 
 .four h4 {
@@ -136,25 +137,79 @@ h2 {
   grid-area: five;
   background-color: var(--purple);
   color: var(--white);
+  /* below only for mobile view */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.six{
+
+.five img {
+  height: 60%;
+  width: 70%;
+}
+
+.five h3 {
+  font-size: 2em;
+  text-align: center;
+  margin: 20px auto 10px auto;
+  width: 60%;
+}
+
+
+.six {
   grid-area: six;
   color: var(--black);
 }
+
+.six img {
+  width: 55%;
+}
+
+.six h2 {
+  font-size: 3.5em;
+  margin: 20px auto 10px auto; 
+}
+
+.six p {
+  font-size: 1.5em;
+}
+
+
 .seven {
   grid-area: seven;
   background-color: var(--yellow-light);
   color: var(--black);
 }
 
+.seven h3 {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
 .seven span {
-  color: var(--purple-light);
+  color: var(--purple);
+  font-style: italic;
+}
+
+.seven img {
+  width: 65%;
+  margin: 10px auto;
 }
 
 .eight {
   grid-area: eight;
   background-color: var(--yellow);
   color: var(--black);
+}
+
+.eight h3 {
+  font-size: 2.5em;
+  margin: 20px auto;
+}
+
+.eight img {
+  width: 80%;
 }
 
 @media (min-width: 600px) {
